@@ -40,6 +40,7 @@ import {WizardStep} from '../util/wizard-step.interface';
  */
 @Directive({
   selector: '[awWizardCompletionStep]',
+  standalone: true,
   providers: [
     {provide: WizardStep, useExisting: forwardRef(() => WizardCompletionStepDirective)},
     {provide: WizardCompletionStep, useExisting: forwardRef(() => WizardCompletionStepDirective)}

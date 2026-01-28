@@ -54,6 +54,7 @@ import {WizardComponent} from '../components/wizard.component';
  */
 @Directive({
   selector: '[awNavigationMode]',
+  standalone: true,
 })
 export class NavigationModeDirective implements OnChanges {
 

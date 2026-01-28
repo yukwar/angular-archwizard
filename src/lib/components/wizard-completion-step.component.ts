@@ -41,6 +41,7 @@ import {WizardStep} from '../util/wizard-step.interface';
 @Component({
   selector: 'aw-wizard-completion-step',
   templateUrl: 'wizard-completion-step.component.html',
+  standalone: true,
   providers: [
     {provide: WizardStep, useExisting: forwardRef(() => WizardCompletionStepComponent)},
     {provide: WizardCompletionStep, useExisting: forwardRef(() => WizardCompletionStepComponent)}

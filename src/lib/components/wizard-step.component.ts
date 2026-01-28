@@ -58,6 +58,7 @@ import {WizardStep} from '../util/wizard-step.interface';
 @Component({
   selector: 'aw-wizard-step',
   templateUrl: 'wizard-step.component.html',
+  standalone: true,
   providers: [
     {provide: WizardStep, useExisting: forwardRef(() => WizardStepComponent)}
   ]

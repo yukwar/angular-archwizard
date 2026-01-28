@@ -56,6 +56,7 @@ import {WizardStep} from '../util/wizard-step.interface';
  */
 @Directive({
   selector: '[awWizardStep]',
+  standalone: true,
   providers: [
     {provide: WizardStep, useExisting: forwardRef(() => WizardStepDirective)}
   ]

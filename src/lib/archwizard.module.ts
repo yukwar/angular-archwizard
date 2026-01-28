@@ -25,7 +25,8 @@ import {CompletedStepDirective} from './directives/completed-step.directive';
  * @author Marc Arndt
  */
 @NgModule({
-  declarations: [
+  imports: [
+    CommonModule,
     WizardComponent,
     WizardStepComponent,
     WizardNavigationBarComponent,
@@ -43,9 +44,6 @@ import {CompletedStepDirective} from './directives/completed-step.directive';
     ResetWizardDirective,
     NavigationModeDirective,
     CompletedStepDirective,
-  ],
-  imports: [
-    CommonModule
   ],
   exports: [
     WizardComponent,

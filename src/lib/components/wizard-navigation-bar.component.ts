@@ -1,7 +1,9 @@
-import { Component, Input } from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Component} from '@angular/core';
 import { WizardCompletionStep } from '../util/wizard-completion-step.interface';
 import { WizardStep } from '../util/wizard-step.interface';
 import { WizardComponent } from './wizard.component';
+import {GoToStepDirective} from '../directives/go-to-step.directive';
 
 /**
  * The `aw-wizard-navigation-bar` component contains the navigation bar inside a [[WizardComponent]].
@@ -19,6 +21,8 @@ import { WizardComponent } from './wizard.component';
 @Component({
   selector: 'aw-wizard-navigation-bar',
   templateUrl: 'wizard-navigation-bar.component.html',
+  standalone: true,
+  imports: [CommonModule, GoToStepDirective],
 })
 export class WizardNavigationBarComponent {
   /**
